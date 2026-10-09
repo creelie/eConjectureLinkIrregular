@@ -1,6 +1,8 @@
-**Link-irregular tournaments exist for every order at least six**, by Deep Bhattacharjee.
+**A short proof that link-irregular tournaments exist for every order at least six**, by Deep Bhattacharjee.
 
-Bastien and Khormali conjectured that a link-irregular tournament on n vertices (one whose vertex-deleted subtournaments are pairwise non-isomorphic) exists if and only if n ≥ 6, and proved it for n ≤ 8. The paper proves it for every n.
+v1.1.0 credits the earlier proof of the conjecture by Ching Ho Chau (August 2026, doi:10.5281/zenodo.22150037) and its Lean formalisation by Shane Harte (doi:10.5281/zenodo.22232432), which v1.0.0 did not cite, and retitles the paper as a second, shorter proof. The mathematics is unchanged.
+
+Bastien and Khormali conjectured that a link-irregular tournament on n vertices (one whose vertex-deleted subtournaments are pairwise non-isomorphic) exists if and only if n ≥ 6, and proved it for n ≤ 8. Chau proved it for every n by substitution into a transitive tournament; the paper gives a different proof that adds two vertices at a time.
 
 | Step | Content |
 |---|---|

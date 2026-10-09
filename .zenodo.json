@@ -1,6 +1,6 @@
 {
-  "title": "Link-irregular tournaments exist for every order at least six",
-  "version": "1.0.0",
+  "title": "A short proof that link-irregular tournaments exist for every order at least six",
+  "version": "1.1.0",
   "upload_type": "publication",
   "publication_type": "preprint",
   "creators": [
@@ -10,7 +10,7 @@
       "affiliation": "Formerly, Electro-Gravitational Space Propulsion Laboratory (EGSPL), Bhubaneswar, Odisha 751030, India"
     }
   ],
-  "description": "<p>A digraph is link-irregular if no two of its vertices have isomorphic links. Bastien and Khormali conjectured that a link-irregular tournament on n vertices exists if and only if n &ge; 6, and proved the case n &le; 8. We prove the conjecture for every n, by a construction that adds two vertices at a time: a vertex beating every old vertex, a vertex beaten by every old vertex, and one arc between them.</p><p>The archive contains the paper (PDF, LaTeX sources with the figure as PNG, arXiv tarball) and independent checks in C, C++, Bash, Python, Julia and Lean 4, including an exhaustive count of link-irregular tournaments on up to seven vertices (none up to five, 4 on six, 139 on seven, up to isomorphism). A Lean 4 proof with Mathlib proves the theorem for every n &ge; 6 using only the standard axioms; a second Lean file checks in the kernel that no tournament on 2 to 5 vertices is link-irregular.</p>",
+  "description": "<p>A digraph is link-irregular if no two of its vertices have isomorphic links. Bastien and Khormali conjectured that a link-irregular tournament on n vertices exists if and only if n &ge; 6, and proved the case n &le; 8. Chau proved the conjecture in 2026 (doi:10.5281/zenodo.22150037) by substituting link-irregular 2-strong tournaments into a transitive tournament. We give a short different proof, by a construction that adds two vertices at a time: a vertex beating every old vertex, a vertex beaten by every old vertex, and one arc between them.</p><p>The archive contains the paper (PDF, LaTeX sources with the figure as PNG, arXiv tarball) and independent checks in C, C++, Bash, Python, Julia and Lean 4, including an exhaustive count of link-irregular tournaments on up to seven vertices (none up to five, 4 on six, 139 on seven, up to isomorphism). A Lean 4 proof with Mathlib proves the theorem for every n &ge; 6 by this construction using only the standard axioms; a second Lean file checks in the kernel that no tournament on 2 to 5 vertices is link-irregular.</p>",
   "keywords": [
     "tournament",
     "link-irregular digraph",
@@ -31,6 +31,18 @@
       "identifier": "10.61091/jcmcc130-15",
       "relation": "references",
       "resource_type": "publication-article",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.5281/zenodo.22150037",
+      "relation": "references",
+      "resource_type": "publication-preprint",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.5281/zenodo.22232432",
+      "relation": "references",
+      "resource_type": "software",
       "scheme": "doi"
     }
   ],
