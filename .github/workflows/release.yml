@@ -43,5 +43,5 @@ jobs:
         run: |
           gh release create "$TAG" dist/* \
             --target "$TARGET" \
-            --title "$TAG: Link-irregular tournaments exist for every order at least six" \
+            --title "$TAG: A short proof that link-irregular tournaments exist for every order at least six" \
             --notes-file .github/RELEASE_NOTES.md

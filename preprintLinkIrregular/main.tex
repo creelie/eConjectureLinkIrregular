@@ -23,12 +23,12 @@
 \numberwithin{equation}{section}
 
 \newcommand{\sco}{\operatorname{sc}}
-\hypersetup{pdftitle={Link-irregular tournaments exist for every order at least six},pdfauthor={Deep Bhattacharjee}}
+\hypersetup{pdftitle={A short proof that link-irregular tournaments exist for every order at least six},pdfauthor={Deep Bhattacharjee}}
 \providecommand{\doi}[1]{\url{https://doi.org/#1}}
 
 \begin{document}
 
-\title[Link-irregular tournaments]{Link-irregular tournaments exist\\ for every order at least six}
+\title[Link-irregular tournaments]{A short proof that link-irregular tournaments\\ exist for every order at least six}
 
 \author{Deep Bhattacharjee}
 \address{Formerly, Electro-Gravitational Space Propulsion Laboratory (EGSPL),\newline Bhubaneswar, Odisha 751030, India}
@@ -41,7 +41,7 @@
 \keywords{tournament, link-irregular digraph, vertex-deleted subtournament, score sequence}
 
 \begin{abstract}
-A digraph is link-irregular if no two of its vertices have isomorphic links. Bastien and Khormali conjectured that a link-irregular tournament on $n$ vertices exists if and only if $n\ge6$, and proved the case $n\le 8$. We prove the conjecture for every $n$, by a construction that adds two vertices at a time.
+A digraph is link-irregular if no two of its vertices have isomorphic links. Bastien and Khormali conjectured that a link-irregular tournament on $n$ vertices exists if and only if $n\ge6$, and Chau proved it by substitution into a transitive tournament. We give a short different proof, by a construction that adds two vertices at a time.
 \end{abstract}
 
 \maketitle
@@ -58,8 +58,12 @@ A link-irregular tournament on $n$ vertices exists if and only if $n\ge6$.
 
 Here $n\ge2$; the tournament with one vertex is link-irregular for want of a second vertex.
 
+Chau~\cite{Chau} proved Conjecture~\ref{conj}. Call a tournament $2$-strong if it is strongly connected and stays so after any one vertex is deleted. Chau showed that substituting link-irregular $2$-strong tournaments into a transitive tournament gives a link-irregular tournament, and found such tournaments of every order from $8$ to $15$ by computer search; together with the examples of Bastien and Khormali this covers every $n\ge6$. Harte formalised Chau's proof in Lean~\cite{HarteLean} and showed that $7$ is the least order of a link-irregular $2$-strong tournament~\cite{Harte}.
+
+We give a second proof. Its only finite input is a pair of tournaments on six and seven vertices whose links can be told apart by hand.
+
 \begin{theorem}\label{thm:main}
-For every $n\ge6$ there is a link-irregular tournament on $n$ vertices that has neither a source nor a sink. Together with the result of Bastien and Khormali for $n\le5$, Conjecture~\ref{conj} is true.
+For every $n\ge6$ there is a link-irregular tournament on $n$ vertices that has neither a source nor a sink.
 \end{theorem}
 
 The proof is an induction from $n$ to $n+2$ (Lemma~\ref{lem:step}), started at $n=6$ and $n=7$ (Section~\ref{sec:base}). The new pair of vertices is a source and a sink of the old tournament joined by one reversed arc; this pair can be recognised inside every link, which is what makes the step work.
@@ -150,7 +154,7 @@ The construction is explicit: $T_n$ is obtained from $T_6$ or $T_7$ by adding th
 Every link-irregular tournament on $n\ge 6$ vertices whose links have pairwise different score sequences gives such a tournament on $n+2$ vertices with the same property, because the score sequence of $T^+-v$ is that of $T-v$ with every entry raised by one and the entries $1$ and $n-1$ added. Starting from $T_7$, this gives link-irregular tournaments of every odd order whose links are already told apart by their score sequences.
 \end{remark}
 
-\subsection*{Use of generative AI} The author used Claude (Anthropic) for literature search, computation and drafting; the author checked the mathematics and takes full responsibility for the content.
+\subsection*{Acknowledgements} The author used Claude (Anthropic) to search the literature, to find and check the construction and its proof, to run the computer checks of the finite claims, and to draft the text. The author checked every step of the proofs and every citation, and takes full responsibility for the content. No funding was received for this work, and the author has no competing interests.
 
 \begin{thebibliography}{9}
 
@@ -162,6 +166,15 @@ A.~Bastien and O.~Khormali, \emph{On link-irregular digraphs}, preprint, 2025. \
 
 \bibitem{BKj}
 A.~Bastien and O.~Khormali, \emph{On link-irregular digraphs}, J. Combin. Math. Combin. Comput. \textbf{130} (2026), 227--240. \doi{10.61091/jcmcc130-15}
+
+\bibitem{Chau}
+C.~H. Chau, \emph{A proof of the Bastien--Khormali conjecture on link-irregular tournaments}, preprint, 2026. \doi{10.5281/zenodo.22150037}
+
+\bibitem{Harte}
+S.~Harte, \emph{The minimal base order for the join construction on link-irregular tournaments}, preprint, 2026. \doi{10.5281/zenodo.22232944}
+
+\bibitem{HarteLean}
+S.~Harte, \emph{A Lean~4 formalisation of the Bastien--Khormali conjecture and the minimal base order for Chau's join construction}, software, 2026. \doi{10.5281/zenodo.22232432}
 
 \end{thebibliography}
 

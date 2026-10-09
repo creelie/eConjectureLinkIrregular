@@ -1,5 +1,8 @@
 /-
-  Link-irregular tournaments exist for every order at least six.
+  Link-irregular tournaments exist for every order at least six: the proof of
+  D. Bhattacharjee, *A short proof that link-irregular tournaments exist for every order at least
+  six*. The Bastien–Khormali conjecture was first proved by C. H. Chau (doi:10.5281/zenodo.22150037),
+  by a different construction formalised by S. Harte (doi:10.5281/zenodo.22232432).
 
   A tournament is a Bool-valued relation r on a finite type V with r v v = false and, for u ≠ v,
   exactly one of r u v, r v u. The link of v is the subtournament on the other vertices, and r is
