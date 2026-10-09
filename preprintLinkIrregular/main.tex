@@ -58,7 +58,7 @@ A link-irregular tournament on $n$ vertices exists if and only if $n\ge6$.
 
 Here $n\ge2$; the tournament with one vertex is link-irregular for want of a second vertex.
 
-Chau~\cite{Chau} proved Conjecture~\ref{conj}. Call a tournament $2$-strong if it is strongly connected and stays so after any one vertex is deleted. Chau showed that substituting link-irregular $2$-strong tournaments into a transitive tournament gives a link-irregular tournament, and he found such tournaments of every order from $8$ to $15$ by computer search; together with the examples of Bastien and Khormali this covers every $n\ge6$. Harte formalised Chau's proof in Lean~\cite{HarteLean} and showed that $7$ is the least order of a link-irregular $2$-strong tournament~\cite{Harte}.
+Chau~\cite{Chau} proved Conjecture~\ref{conj}. Call a tournament $2$-strong if it is strongly connected and stays so after any one vertex is deleted. Chau showed that substituting link-irregular $2$-strong tournaments into a transitive tournament gives a link-irregular tournament, and found such tournaments of every order from $8$ to $15$ by computer search; together with the examples of Bastien and Khormali this covers every $n\ge6$. Harte formalised Chau's proof in Lean~\cite{HarteLean} and showed that $7$ is the least order of a link-irregular $2$-strong tournament~\cite{Harte}.
 
 We give a second proof. Its only finite input is a pair of tournaments on six and seven vertices whose links can be told apart by hand.
 
@@ -154,7 +154,7 @@ The construction is explicit: $T_n$ is obtained from $T_6$ or $T_7$ by adding th
 Every link-irregular tournament on $n\ge 6$ vertices whose links have pairwise different score sequences gives such a tournament on $n+2$ vertices with the same property, because the score sequence of $T^+-v$ is that of $T-v$ with every entry raised by one and the entries $1$ and $n-1$ added. Starting from $T_7$, this gives link-irregular tournaments of every odd order whose links are already told apart by their score sequences.
 \end{remark}
 
-\subsection*{Use of generative AI} The author used Claude (Anthropic) for literature search, computation and drafting; the author checked the mathematics and takes full responsibility for the content.
+\subsection*{Acknowledgements} The author used Claude (Anthropic) to search the literature, to find and check the construction and its proof, to run the computer checks of the finite claims, and to draft the text. The author checked every step of the proofs and every citation, and takes full responsibility for the content. No funding was received for this work, and the author has no competing interests.
 
 \begin{thebibliography}{9}
 
